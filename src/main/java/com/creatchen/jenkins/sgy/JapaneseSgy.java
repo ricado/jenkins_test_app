@@ -1,0 +1,19 @@
+package com.creatchen.jenkins.sgy;
+
+import com.creatchen.strategy.StrategyCode;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
+
+/**
+ * @author chen cy
+ * @date 2020/5/28 12:57 上午
+ */
+@Slf4j
+@Service
+@StrategyCode("Japan")
+public class JapaneseSgy implements PeopleSgy {
+    @Override
+    public String say() {
+        return "私は日本人です";
+    }
+}
