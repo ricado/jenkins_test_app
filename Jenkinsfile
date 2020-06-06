@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                sh './scripts/init.sh'
+                sh 'sudo ./scripts/init.sh'
             }
         }
     }
