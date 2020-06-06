@@ -15,7 +15,7 @@ import java.lang.reflect.InvocationTargetException;
 @SpringBootApplication
 @ComponentScan("com")
 @RestController
-public class Demo01Application {
+public class MainApplication {
 
     @Autowired
     private StrategyFactory strategyFactory;
@@ -27,7 +27,7 @@ public class Demo01Application {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(Demo01Application.class, args);
+        SpringApplication.run(MainApplication.class, args);
      }
 
 }
