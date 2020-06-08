@@ -232,7 +232,6 @@ public class StrategyFactory implements InitializingBean {
 
     public <T> Object execute2(String code,Class<T> tClass,Object... args) throws InvocationTargetException, IllegalAccessException {
         Method[] methods = tClass.getMethods();
-        log.info("method name : {}",methods[0].getName());
         return execute2(code,tClass,methods[0],args);
     }
 
