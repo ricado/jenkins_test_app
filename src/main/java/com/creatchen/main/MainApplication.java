@@ -25,7 +25,7 @@ public class MainApplication {
     @GetMapping("/hello")
     public String hello(@RequestParam(value = "name", defaultValue = "World") String name) throws InvocationTargetException, IllegalAccessException {
         String result = (String) strategyFactory.execute2(name, PeopleSgy.class);
-        log.info("result : {}",result);
+        log.info("result is : {}",result);
         return String.format("Hello,%s!\n%s", name,result);
     }
 
